@@ -1,0 +1,247 @@
+@media screen and ( min-width: 1000px) {
+
+    /* header================================================================================ */
+
+
+    header{
+        height: 110px;
+    }
+
+    
+    header h1{
+        padding-left: 4rem ;
+    }
+
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 4rem ;
+        align-items: center;
+        width: 30%;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #272727;
+    }
+
+    nav a:nth-child(1){
+        display: none;
+    }
+
+    .active nav{
+        display: none;
+    }
+
+    #burger{
+        display: none;
+    }
+
+
+
+
+    /* ================================================================================header */
+
+    /* main================================================================================== */
+    /* section home-------------------------------------------------------------------------- */
+
+    .active .home_photo img:nth-child(1){
+        margin-right: 0px;
+        transform: translate(-80%);
+    }
+
+    .active .home_photo img:nth-child(2){
+        margin-right: 0px;
+        transform: translate(80%);
+    }
+
+    .active .home_photo h1{
+        top: 20%;
+    }
+
+    .home_photo{
+        width: 850px ;
+        background: none;
+        overflow: hidden;
+    }
+    
+    
+    .home_photo img{
+        transition: 0.4s ease;
+        height: 500px;
+        width: auto;
+    }
+
+
+    .home_photo h1{
+        transition: 0.5s ease;
+        top: -100%;   
+        transform: translate(-50%,0);
+        width: 60%;
+        font-size: 50px;
+    }
+
+    .home_photo h1 span {
+        color: #3c9cd7;
+    }
+
+
+    /* --------------------------------------------------------------------------section home */
+
+    /* section about-------------------------------------------------------------------------- */
+
+    #about{
+        flex-direction: row;
+    }
+
+    .about_text {
+        margin: 0 32px 16px 0;
+        width: 560px;
+    }
+
+    .about_text h2{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .skills_list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    .citation{
+        display: flex;
+        position: absolute;
+        background: #fafafa;
+        padding: 0.5rem;
+        bottom: 5rem;
+        right: -1rem;
+        font-size: 16px;
+    }
+
+
+    /* --------------------------------------------------------------------------section about */
+
+    /* section work-------------------------------------------------------------------------- */
+
+    #work {
+        overflow: hidden;
+        padding-top: 2.5rem;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        display: block;
+        width: 100%;
+    }
+
+    article{
+        flex-direction: row;
+        margin-left: 10%;
+    }
+
+    article img{
+        height: 350px;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .right{
+        flex-direction: row-reverse;
+        margin-left: 0%;
+        margin-right: 10%;
+    }
+
+    .fiche{
+        width: 30%;
+    }
+
+
+
+
+    /* --------------------------------------------------------------------------section work */
+    /* ==================================================================================main */
+
+    /* footer================================================================================ */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        background: #2d2d2d;
+        color: #fff;
+        width: 100%;
+    }
+
+    .contact_links{
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+    }
+
+    .contact_links a {
+        font-size: 2em;
+    }
+
+
+    /* ================================================================================footer */
+
+}
+
+@media screen and ( min-width: 1300px) {
+
+    .profil_picture{
+        height: 450px;
+    }
+    
+    .citation{
+        bottom: -2rem;
+        right: -8rem;
+    }
+
+    article img{
+        height: 450px;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .fiche{
+        justify-content: space-between;
+    }
+
+    .fiche_links{
+        justify-content: flex-start;
+        width: 150vh;
+        border-top: solid 1px ;
+        position: relative;
+        bottom: 0;
+    }
+
+    .right .fiche_links{
+        justify-content: flex-end;
+    }
+
+    .fiche_links a{
+        padding: 1rem 2rem 1rem 1rem;
+        border-bottom: solid 1px;
+    }
+
+    article{
+        margin-left: 15%;
+    }
+
+
+    .contact_links{
+        width: 40vw;
+    }
+
+    .contact_links a {
+        font-size: 1.5em;
+    }
+}
