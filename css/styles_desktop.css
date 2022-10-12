@@ -19,11 +19,15 @@
         margin-right: 4rem ;
         align-items: center;
         width: 30%;
+        height: auto;
+        flex-direction: row;
+        position: relative;
+        background: none;
+        transform: translate(0%);
     }
 
     nav a{
-        text-decoration: none;
-        color: #272727;
+        margin: auto;
     }
 
     nav a:nth-child(1){
@@ -213,6 +217,7 @@
 
     .fiche{
         justify-content: space-between;
+        width: 40%;
     }
 
     .fiche_links{
